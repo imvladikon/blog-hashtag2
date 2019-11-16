@@ -18,20 +18,20 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: blog
+title: Yet Another Blog |#ImVlad
 email: info@hashtag.ru
 description: >- # this means to ignore newlines until "baseurl:"
   
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://hashtag.ru" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: 
-github_username:  
+github_username: imvladikon  
 
 # Build settings
 theme: minima
-# plugins:
-#   - jekyll-feed
-
+plugins:
+  - jekyll-feed
+  - jekyll-hashtags
 # Exclude from processing.
 # The following items will not be processed, by default.
 # Any item listed under the `exclude:` key here will be automatically added to
