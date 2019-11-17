@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "First post, generate all permutations of string"
-date:   2019-11-15 10:15:16 +0200
+date:   2019-10-15 09:45:16 +0200
 categories: 
 description: 
 tags: java algorithms
