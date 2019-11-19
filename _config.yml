@@ -30,6 +30,7 @@ linkedin_username: vladimir-kondukhov-1222b9188
 facebook_username: udjinbob
 # Build settings
 theme: minima
+# highlighter: rouge
 plugins:
   - jekyll-feed
   - jekyll-hashtags
