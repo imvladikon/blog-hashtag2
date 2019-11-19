@@ -199,17 +199,12 @@
   }
 }
 
-.post-meta {
-  font-size: $small-font-size;
-  color: $grey-color;
-}
-
+/**
 .post-link {
   display: block;
   @include relative-font-size(1.5);
 }
-
-
+*/
 
 /**
  * Posts
@@ -218,6 +213,7 @@
   margin-bottom: $spacing-unit;
 }
 
+/**
 .post-title {
   @include relative-font-size(2.625);
   letter-spacing: -1px;
@@ -227,6 +223,7 @@
     @include relative-font-size(2.25);
   }
 }
+*/
 
 .post-content {
   margin-bottom: $spacing-unit;
@@ -295,4 +292,11 @@
   margin-bottom: 0;
   color: $text-color;
   overflow-wrap: break-word;
+}
+
+.post-meta {
+  font-size: $small-font-size;
+  color: $grey-color;
+  display: block;
+  margin-bottom: 15px;
 }
