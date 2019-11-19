@@ -20,9 +20,6 @@ layout: default
     {{ content }}
   </div>
 
-  {%- if site.disqus.shortname -%}
-  {%- include disqus_comments.html -%}
-  {%- endif -%}
 
   <span>
     {% for tag in page.tags %}
@@ -30,5 +27,37 @@ layout: default
     <a href="/tags/{{ tag_name }}"><code class="highligher-rouge"><nobr>{{ tag_name }}</nobr></code>&nbsp;</a>
     {% endfor %}
   </span>
+  <nav class="post-navigation">
+    {% if page.next.url %}
+    <a class="nav-link" href="{{page.next.url}}">
+      <div>
+        <div class="nav-meta">Previous</div>
+        <span class="nav-title">{{page.next.title}}</span>
+      </div>
+    </a>
+    {% endif %}
+    {% if page.previous.url %}
+    <a class="nav-link" href="{{page.previous.url}}">
+      <div>
+        <div class="nav-meta">Next</div>
+        <span class="nav-title">{{page.previous.title}}</span>
+      </div>
+    </a>
+    {% endif %}
+    <div class="nav-link post-related">
+      <div class="nav-meta">You might also like</div>
+      <ul>
+        {% assign posts = site.posts | where_exp:"post", "post.url != page.url" | sample:4 %}
+        {% for post in posts %}
+        {% include related-post.html %}
+        {% endfor %}
+      </ul>
+    </div>
+  </nav>
+
+  {%- if site.disqus.shortname -%}
+  {%- include disqus_comments.html -%}
+  {%- endif -%}
+
   <a class="u-url" href="{{ page.url | relative_url }}" hidden></a>
 </article>

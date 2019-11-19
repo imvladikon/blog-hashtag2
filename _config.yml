@@ -31,9 +31,14 @@ facebook_username: udjinbob
 # Build settings
 theme: minima
 # highlighter: rouge
+paginate: 6
 plugins:
   - jekyll-feed
   - jekyll-hashtags
+  - jekyll-gist
+  - jekyll-paginate
+sass:
+    style: compressed
 # Exclude from processing.
 # The following items will not be processed, by default.
 # Any item listed under the `exclude:` key here will be automatically added to
