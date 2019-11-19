@@ -7,7 +7,9 @@ description:
 tags: java algorithms
 ---
 Hi, everyone! I've started my own blog;)
-![test](/assets/img/good_news_everyone.jpg)
+
+<img src="/assets/img/good_news_everyone.jpg" alt="good_news_everyone" width="250"/>
+
 It's first post about banal old exercise, given a string, generate all permutations of it
 Here's solution on java
 ```java
