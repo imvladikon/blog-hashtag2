@@ -1,5 +1,5 @@
 ---
 layout: tagpage
-title: "Tag: plugins"
+title: "#plugins"
 tag: plugins
 ---

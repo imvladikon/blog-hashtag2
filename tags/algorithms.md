@@ -1,5 +1,5 @@
 ---
 layout: tagpage
-title: "Tag: algorithms"
+title: "#algorithms"
 tag: algorithms
 ---
