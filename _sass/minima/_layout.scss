@@ -193,6 +193,7 @@
   @include relative-font-size(1.75);
 }
 
+/**
 .post-list {
   margin-left: 0;
   list-style: none;
@@ -201,6 +202,25 @@
     margin-bottom: $spacing-unit;
   }
 }
+*/
+
+.post-list {
+  margin-left: 0;
+  list-style: none;
+
+  >li {
+    border-bottom: #CDC 1px solid;
+    padding-bottom: #{$spacing-unit/2};
+    margin-bottom: $spacing-unit;
+  }
+
+  .post-summary {
+    @include media-query($on-palm) {
+      @include text-clamp(4);
+    }
+  }
+}
+
 
 /**
 .post-link {
@@ -302,4 +322,13 @@
   color: $grey-color;
   display: block;
   margin-bottom: 15px;
+}
+
+
+.post-list a:hover {
+  text-decoration: none;
+}
+
+a:hover .post-title {
+  text-decoration: underline;
 }
