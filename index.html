@@ -10,7 +10,11 @@ layout: default
         <div>
           <div class="post-title">{{ post.title }}</div>
           <span class="post-meta">{{ post.date | date: "%B %-d, %Y" }}</span>
-          <p class="post-summary">{{ post.content |  truncatewords:180 }}<p>
+          <p class="post-summary">{{ post.content | split:'<!--break-->' | first }}
+            {% if post.content contains '<!--break-->' %}
+            <a href="{{ post.url }}">read more</a>
+            {% endif %}
+            <p>
         </div>
       </a>
       <span>

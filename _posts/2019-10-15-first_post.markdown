@@ -23,4 +23,5 @@ public static Stream<List<String>> permute(List<String> input) {
         }
     }
 ```
+<!--break-->
 
