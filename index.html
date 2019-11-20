@@ -10,7 +10,7 @@ layout: default
         <div>
           <div class="post-title">{{ post.title }}</div>
           <span class="post-meta">{{ post.date | date: "%B %-d, %Y" }}</span>
-          <p class="post-summary">{{ post.content | strip_html | truncatewords:60 }}<p>
+          <p class="post-summary">{{ post.content |  truncatewords:180 }}<p>
         </div>
       </a>
       <span>
