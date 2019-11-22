@@ -67,7 +67,9 @@ $on-laptop: 800px !default;
 
 // Import partials.
 @import "minima/base",
-"minima/layout",
-"minima/syntax-highlighting"
+"minima/layout"
+// ,
+// "minima/syntax-highlighting"
 ;
-@import "/css/monokai.css";
+// @import "/css/monokai.css";
+@import "/css/github.css";
